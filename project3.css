@@ -1,0 +1,227 @@
+* {
+    background-color: rgba(224, 185, 238, 0.9);
+    text-align: center;
+}
+
+/* Header */
+
+header {
+    background-image: url("https://lh3.googleusercontent.com/mX7bJPGDA1n-rbFZh2FqvT3po7ZdBVQHUJO-xn8LF80_iMDNvm3jz15P81vrwx5t4tvPdz8EwhJhTNpHk_Hn7ixnZRrf9wZwdk0JspiuSPOAysDb5_acDxJn5r-cyw2JBZqttdscug=w2400");
+    height: 450px;
+    background-position: 60% 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    margin: 0;
+    border: 3px solid black;
+    padding: 0;
+    display: grid;
+    grid-template: 50% 50% / 33% 33% 33%;
+    grid-template-areas: "left center right"
+    "bottom center right";
+}
+
+.title, .tag {
+    background-color: black;
+    width: 500px;
+    margin: 0 40px;
+    grid-area: left;
+}
+
+.title {
+    font-size: 48px;
+    grid-area: left;
+    height: 100px;
+    position: relative;
+    top: 125px;
+}
+
+.tag {
+    font-size: 20px;
+    color: rgb(195, 203, 206);
+    grid-area: bottom;
+    height: 60px;
+    position: relative;
+    bottom: 25px;
+}
+
+.hours {
+    grid-area: right;
+    margin: 10px;
+    justify-content: start;
+    color: black;
+}
+
+.hours h1 {
+    text-decoration: underline;
+    color: black;
+}
+
+.hours h3 {
+    font-weight: bolder;
+}
+
+/* Nav */
+
+nav li {
+    display: inline;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+button {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0px 5px;
+    background-color: aquamarine;
+    color: black;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(52, 130, 238);
+}
+
+button:active {
+    margin-top: 5px;
+    color: black;
+    box-shadow: 0px 0px;
+}
+
+/* About */
+
+#about {
+    margin-top: 100px;
+}
+
+.aboutText h2 {
+    font-size: 48px;
+}
+
+.aboutText p {
+    font-size: 20px;
+}
+
+.aboutImages {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "left center right";
+    justify-items: center;
+    align-items: center;
+}
+
+.aboutImg {
+    height: 400px;
+    width: 275px;
+    grid-area: left;
+}
+
+.aboutImg2 {
+    height: 250px;
+    width: 300px;
+    grid-area: center;
+}
+
+.aboutImg3 {
+    height: 400px;
+    width: 300px;
+    grid-area: right;
+}
+
+/* Mission */
+
+#mission {
+    margin-top: 100px;
+    border: 3px solid black;
+    background-color: aquamarine;
+}
+
+#mission h2 {
+    font-size: 48px;
+    background-color: aquamarine;
+}
+
+#mission p {
+    font-size: 20px;
+    background-color: aquamarine;
+}
+
+/* Products */
+
+#products {
+    margin-top: 100px;
+}
+
+#products h2 {
+    font-size: 48px;
+}
+
+.productsList {
+    font-size: 20px;
+}
+
+#products ul {
+    list-style-type: none;
+}
+
+.productsList li {
+    margin: 10px;
+}
+
+/* Tournaments */
+
+#tournaments {
+    margin-top: 100px;
+    border: 3px solid black;
+    background-color: aquamarine;
+}
+
+#tournaments h2 {
+    font-size: 48px;
+    background-color: aquamarine;
+}
+
+.tournamentsP {
+    font-size: 20px;
+    background-color: aquamarine;
+}
+
+.days {
+    display: inline-flex;
+    background-color: aquamarine;
+}
+
+.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday {
+    margin: 20px;
+    background-color: aquamarine;
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.days h3, .days p {
+    background-color: aquamarine;
+}
+
+/* Contact */
+
+#contact {
+    margin-top: 100px;
+}
+
+#contact h2 {
+    font-size: 48px;
+}
+
+#contact p {
+    font-size: 20px;
+}
+
+.contactImg {
+    height: 450px;
+    width: 300px;
+}
